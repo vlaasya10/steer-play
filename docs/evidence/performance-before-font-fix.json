@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-18",
+  "method": "Edge headless, cold context and cache disabled; 390×844 touch viewport; 4× CPU slowdown; 150 ms latency, 200,000 bytes/s download, 93,750 bytes/s upload; localhost production preview; five-second observation after h1; one run per route. Browser observer metrics, NOT Lighthouse or field data.",
+  "lighthouse": "Unavailable: not installed; npm download failed with EACCES in the restricted environment. Scores unverified.",
+  "measurements": [
+    {
+      "route": "/",
+      "lcpMs": 6448,
+      "cls": 0,
+      "domContentLoadedMs": 4219.300000071526,
+      "observationMs": 11147.900000095367,
+      "jsBytes": 134787,
+      "jsRequests": 3,
+      "fonts": "loaded",
+      "failedRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap",
+          "error": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "route": "/demo?guided=1",
+      "lcpMs": 7124,
+      "cls": 0.04739336492890995,
+      "domContentLoadedMs": 4027.7999999523163,
+      "observationMs": 12241.599999904633,
+      "jsBytes": 169307,
+      "jsRequests": 22,
+      "fonts": "loaded",
+      "failedRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap",
+          "error": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "route": "/demo/reels?profile=food&reel=2",
+      "lcpMs": 5340,
+      "cls": 0.04739336492890995,
+      "domContentLoadedMs": 4169.199999928474,
+      "observationMs": 10523.399999976158,
+      "jsBytes": 159684,
+      "jsRequests": 17,
+      "fonts": "loaded",
+      "failedRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap",
+          "error": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "route": "/play/quiz?interest=food&seed=reel-demo",
+      "lcpMs": 5876,
+      "cls": 0.04739336492890995,
+      "domContentLoadedMs": 3930.899999976158,
+      "observationMs": 10916.5,
+      "jsBytes": 149053,
+      "jsRequests": 12,
+      "fonts": "loaded",
+      "failedRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap",
+          "error": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "route": "/learn/metabolism",
+      "lcpMs": 6640,
+      "cls": 0.04739336492890995,
+      "domContentLoadedMs": 4731.5,
+      "observationMs": 11639.100000023842,
+      "jsBytes": 155861,
+      "jsRequests": 13,
+      "fonts": "loaded",
+      "failedRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap",
+          "error": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      ]
+    },
+    {
+      "route": "/learn/glp1",
+      "lcpMs": 6424,
+      "cls": 0.04739336492890995,
+      "domContentLoadedMs": 4740.800000071526,
+      "observationMs": 11440.800000071526,
+      "jsBytes": 153033,
+      "jsRequests": 16,
+      "fonts": "loaded",
+      "failedRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap",
+          "error": "net::ERR_NETWORK_ACCESS_DENIED"
+        }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "file": "AdSimulator-BosOiCLH.js",
+      "gzipBytes": 1860
+    },
+    {
+      "file": "arrow-left-D_XAENBB.js",
+      "gzipBytes": 187
+    },
+    {
+      "file": "book-open-Btnna32B.js",
+      "gzipBytes": 249
+    },
+    {
+      "file": "brain-kSYZoyiP.js",
+      "gzipBytes": 337
+    },
+    {
+      "file": "campaign-DyMIAUcC.js",
+      "gzipBytes": 367
+    },
+    {
+      "file": "CampaignCreative-D5JUj29Q.js",
+      "gzipBytes": 2429
+    },
+    {
+      "file": "CampaignEntry-CfXz3foD.js",
+      "gzipBytes": 540
+    },
+    {
+      "file": "campaigns-C5Iu1ZZK.js",
+      "gzipBytes": 3000
+    },
+    {
+      "file": "CaseFile-CJkw4bXU.js",
+      "gzipBytes": 2494
+    },
+    {
+      "file": "createLucideIcon-DZjZZ3Dn.js",
+      "gzipBytes": 1480
+    },
+    {
+      "file": "DemoMode-Dc54RQG-.js",
+      "gzipBytes": 7009
+    },
+    {
+      "file": "entertainmentAds-BrbZ3pzZ.js",
+      "gzipBytes": 423
+    },
+    {
+      "file": "events-C3tPYheT.js",
+      "gzipBytes": 193
+    },
+    {
+      "file": "eye-70g-h3ny.js",
+      "gzipBytes": 229
+    },
+    {
+      "file": "GameCompletionScreen-DkFfFKLy.js",
+      "gzipBytes": 1637
+    },
+    {
+      "file": "GameIllustrations-CZYyDmoe.js",
+      "gzipBytes": 1569
+    },
+    {
+      "file": "GLP1Explained-Cdiyl1c0.js",
+      "gzipBytes": 5347
+    },
+    {
+      "file": "glp1Questions-CDJOSPpl.js",
+      "gzipBytes": 4644
+    },
+    {
+      "file": "HealthAd-BYDMH0N0.js",
+      "gzipBytes": 1131
+    },
+    {
+      "file": "index-DtcekNqk.js",
+      "gzipBytes": 115927
+    },
+    {
+      "file": "InsideMetabolism-DnQvT5DJ.js",
+      "gzipBytes": 11732
+    },
+    {
+      "file": "interestConfigs-DPeN8xcW.js",
+      "gzipBytes": 1120
+    },
+    {
+      "file": "InterestSelector-ByIMgU1Z.js",
+      "gzipBytes": 1295
+    },
+    {
+      "file": "jsx-runtime-CNg7hZ3e.js",
+      "gzipBytes": 17380
+    },
+    {
+      "file": "MissingClue-CUFT3KRv.js",
+      "gzipBytes": 1682
+    },
+    {
+      "file": "PlayablePreview-B41KIXjn.js",
+      "gzipBytes": 1077
+    },
+    {
+      "file": "plus-CYjGxjqA.js",
+      "gzipBytes": 175
+    },
+    {
+      "file": "PredictTheTwist-BppQDAOb.js",
+      "gzipBytes": 2203
+    },
+    {
+      "file": "quizEngine-DT9DToAM.js",
+      "gzipBytes": 3783
+    },
+    {
+      "file": "ReelsSimulator-BlUReh2h.js",
+      "gzipBytes": 2594
+    },
+    {
+      "file": "scenarios-CHbsFYN3.js",
+      "gzipBytes": 1434
+    },
+    {
+      "file": "ScienceReveal-0Pb21VGB.js",
+      "gzipBytes": 2542
+    },
+    {
+      "file": "scientificContent-BNnTVLM1.js",
+      "gzipBytes": 1918
+    },
+    {
+      "file": "ShareChallenge-DE_KWOX7.js",
+      "gzipBytes": 1437
+    },
+    {
+      "file": "signalPatterns-DOaUysnn.js",
+      "gzipBytes": 522
+    },
+    {
+      "file": "SignalRush-NjJEjmmV.js",
+      "gzipBytes": 2209
+    },
+    {
+      "file": "sprout-BhU5sePo.js",
+      "gzipBytes": 250
+    },
+    {
+      "file": "SteerPlayQuiz-Cdeabihb.js",
+      "gzipBytes": 2538
+    },
+    {
+      "file": "TopicSources-uxfyaqJR.js",
+      "gzipBytes": 913
+    },
+    {
+      "file": "useGameEvents-DyBsIfKC.js",
+      "gzipBytes": 1025
+    },
+    {
+      "file": "utensils-B2nIanLy.js",
+      "gzipBytes": 249
+    },
+    {
+      "file": "volume-x-BYh36oCh.js",
+      "gzipBytes": 282
+    }
+  ]
+}

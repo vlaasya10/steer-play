@@ -1,0 +1,35 @@
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { ArrowLeft, ArrowUp, ArrowDown, Heart, Bookmark, VolumeX, Play } from 'lucide-react';
+import { buildFeed, getProfile, isProfile, isCreative, primaryCreatives, organicPosts, organicHeadlines, resolveHook, type HookVariant, type InterestProfile, type CreativeId } from '../data/campaigns';
+import AudienceControl from '../components/campaign/AudienceControl';
+import CampaignCreative from '../components/campaign/CampaignCreative';
+import { OrganicArtwork } from '../components/campaign/CreativeArtwork';
+import { resolveCreative } from '../data/campaigns';
+import { trackEvent } from '../utils/events';
+import '../styles/campaign.css';
+
+function Feed({profile,featured,variant,initialIndex,onIndex}:{variant:HookVariant;profile:InterestProfile;featured?:CreativeId;initialIndex:number;onIndex:(index:number)=>void}) {
+  const audience=getProfile(profile);const items=buildFeed(profile,featured);
+  const [active,setActive]=useState(initialIndex);
+  const [liked,setLiked]=useState<number[]>([]);const [saved,setSaved]=useState<number[]>([]);
+  const rail=useRef<HTMLDivElement>(null);const restored=useRef(false);const seen=useRef(new Set<number>());
+  useLayoutEffect(()=>{if(!restored.current && rail.current){rail.current.scrollTop=initialIndex*rail.current.clientHeight;restored.current=true;}},[initialIndex]);
+  useEffect(()=>{if(!seen.current.has(active)){seen.current.add(active);trackEvent({name:'simulated_reel_viewed',game:'simulator'});if(items[active].kind==='sponsored')trackEvent({name:'sponsored_creative_viewed',game:'simulator'});}},[active,items]);
+  function go(index:number){const next=Math.min(4,Math.max(0,index));rail.current?.scrollTo({top:next*rail.current.clientHeight,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
+  const toggle=(values:number[],index:number)=>values.includes(index)?values.filter(value=>value!==index):[...values,index];
+  return <><div ref={rail} className="reels-rail" role="region" aria-label="Simulated Reels feed" tabIndex={0} onScroll={event=>{const element=event.currentTarget;const next=Math.max(0,Math.min(4,Math.round(element.scrollTop/element.clientHeight)));if(next!==active){setActive(next);onIndex(next);}}} onKeyDown={event=>{if(event.target!==rail.current)return;if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){event.preventDefault();go(event.key==='Home'?0:event.key==='End'?4:active+(event.key==='ArrowDown'?1:-1));}}}>
+    {items.map((item,index)=><section key={`${profile}-${index}-${item.kind}`} className="feed-frame" data-active={index===active} inert={index!==active} aria-hidden={index!==active} aria-label={`Reel ${index+1} of 5${item.kind==='sponsored'?', sponsored challenge':', fictional creator'}`}>
+      {item.kind==='sponsored'?<CampaignCreative creative={resolveCreative(item.creative,profile,{variant})} active={active===index} />:<article className="organic-reel"><div className="organic-profile"><span className="fictional-avatar">{organicPosts[item.post].creator[0]}</span><div><strong>{organicPosts[item.post].creator}</strong><small>Fictional creator · original illustration</small></div><VolumeX size={17} aria-label="Sound off" /></div><span className="eyebrow">{organicPosts[item.post].tag}</span><h2>{organicHeadlines[audience.organic][item.post]}</h2><OrganicArtwork kind={audience.organic} variant={item.post} /><p>{audience.organic==='kitchen'?'An imagined kitchen moment, illustrated for this demo.':audience.organic==='pattern'?'A fictional pattern sketch. What would you draw next?':organicPosts[item.post].caption}</p><div className="organic-actions"><button aria-label="Like this fictional Reel in the demo" aria-pressed={liked.includes(index)} onClick={()=>setLiked(previous=>toggle(previous,index))}><Heart size={22} fill={liked.includes(index)?'currentColor':'none'} /></button><button aria-label="Save this fictional Reel in the demo" aria-pressed={saved.includes(index)} onClick={()=>setSaved(previous=>toggle(previous,index))}><Bookmark size={22} fill={saved.includes(index)?'currentColor':'none'} /></button><span>{liked.includes(index)||saved.includes(index)?'Saved or liked in this demo only.':'No real likes, followers or activity.'}</span></div><span className="organic-scroll"><Play size={12} />Scroll to keep exploring</span></article>}
+    </section>)}
+  </div><div className="reels-navigation"><button aria-label="Previous Reel" disabled={active===0} onClick={()=>go(active-1)}><ArrowUp size={19} /></button><p role="status" aria-live="polite">{active+1} / 5 · {items[active].kind==='sponsored'?'Sponsored challenge':'Fictional creator'}</p><button aria-label="Next Reel" disabled={active===4} onClick={()=>go(active+1)}><ArrowDown size={19} /></button></div></>;
+}
+export default function ReelsSimulator(){
+  const location=useLocation();const [params,setParams]=useSearchParams();const audience=getProfile(params.get('profile'));const requested=params.get('creative');
+  const variant=resolveHook(params.get('variant'));
+  const featured=isCreative(requested)&&audience.creatives.includes(requested)?requested:audience.creatives[0];
+  const raw=Number(params.get('reel')??0);const index=Number.isFinite(raw)?Math.max(0,Math.min(4,Math.trunc(raw))):0;
+  const opened=useRef(false);useEffect(()=>{if(!opened.current){opened.current=true;trackEvent({name:'reel_simulator_opened',game:'simulator'});}},[]);
+  function update(profile:InterestProfile,creative?:CreativeId,reel=0){setParams({profile,...(creative?{creative}:{}),...(variant!=='primary'?{variant}:{}),reel:String(reel)},{replace:true,state:location.state});}
+  return <main id="main-content" className="reels-layout"><header className="reels-header"><h1 className="sr-only">Steer Play Reels simulator</h1><div><Link to="/demo" className="text-link"><ArrowLeft size={16} />Judge demo</Link><span className="wordmark">steer.</span></div><p className="reels-disclosure">Simulated Reels experience — not Instagram.</p><div className="reels-selects"><AudienceControl label="Feed audience" value={audience.id} onChange={profile=>update(profile)} /><label className="campaign-select"><span>Featured creative</span><select aria-label="Featured creative" value={featured} onChange={event=>{if(isCreative(event.target.value))update(audience.id,event.target.value,2);}}>{audience.creatives.map(id=><option key={id} value={id}>{primaryCreatives[id].title}</option>)}</select></label></div>{params.get('profile')&&!isProfile(params.get('profile'))&&<p className="feed-recovery">That profile isn’t available. Showing Food & Cooking.</p>}</header><div className="reels-stage"><Feed key={`${audience.id}:${featured}:${variant}`} variant={variant} profile={audience.id} featured={featured} initialIndex={index} onIndex={next=>update(audience.id,featured,next)} /></div><footer className="reels-footer">Swipe, scroll or use ↑ ↓. Ads are optional.<span>Local prototype activity · memory only. No Meta connection.</span></footer></main>;
+}

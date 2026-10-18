@@ -1,0 +1,10 @@
+import { Link } from 'react-router-dom';
+import { ArrowLeft, ArrowRight, Eye, Sparkles, Play, Brain, Sprout, Utensils } from 'lucide-react';
+import BrandHeader from '../components/BrandHeader';
+import MobileLayout from '../components/MobileLayout';
+import '../styles/glp1.css';
+import { glp1Copy } from '../data/glp1Questions';
+
+export default function HealthAd() {
+  return <MobileLayout><BrandHeader compact /><main id="main-content" className="ad-page page-width"><div className="ad-context"><span className="eyebrow">HEALTH INTEREST · LEARNING FIRST</span><h1>A question. <br />A little <em>clarity.</em></h1><p>For adults who are curious about metabolic health. This audience is an illustrative choice.</p><div className="simulation-note"><Eye size={20} /><div><strong>Simulated Reel advertisement</strong><p>Prototype demonstration. No live Meta integration or access to Instagram engagement history.</p></div></div><Link className="text-link" to="/demo"><ArrowLeft size={15} />Back to the idea</Link></div><section className="reel health-reel" aria-label="Simulated sponsored health Reel"><div className="reel-top"><span>REEL PREVIEW</span><span className="sim-badge">SIMULATION</span></div><div className="reel-brand"><span className="reel-avatar">s.</span><div><strong>steer play</strong><span>Sponsored · Science worth knowing</span></div><Sparkles size={19} /></div><div className="reel-headline"><span className="eyebrow">GLP-1, EXPLAINED</span><h2>GLP-1: How much do you actually know?</h2><p>Heard about GLP-1? Start with the facts.</p></div><div className="health-reel-art"><div aria-hidden="true"><Utensils /><span>↔</span><Sprout /><span>↔</span><Brain /></div><h3>{glp1Copy.adStatement}</h3><span>MYTH OR FACT?</span><p>A simplified educational illustration.</p></div><div className="reel-bottom"><span><Play size={13} />One question. A clearer perspective.</span><Link className="button primary" to="/learn/glp1">Explore the science <ArrowRight size={19} /></Link><small>No sign-up. Educational content · Pending clinical review.</small></div></section></main></MobileLayout>;
+}

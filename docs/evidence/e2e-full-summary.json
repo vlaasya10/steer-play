@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "stats": {
+    "startTime": "2026-10-18T13:22:08.451Z",
+    "duration": 515694.893,
+    "expected": 64,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "note": "Full suite after the functional, scientific, mobile, guided-demo and performance changes. Subsequent meal/timer copy edits receive a separate affected-file run. No retries were configured."
+}

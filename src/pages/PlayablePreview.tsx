@@ -1,0 +1,10 @@
+import { Link, useSearchParams } from 'react-router-dom';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { creativeIds, getProfile, isCreative, primaryCreatives, resolveCreative } from '../data/campaigns';
+import AudienceControl from '../components/campaign/AudienceControl';
+import '../styles/campaign.css';
+
+export default function PlayablePreview(){
+  const [params,setParams]=useSearchParams();const profile=getProfile(params.get('profile'));const requested=params.get('creative');const id=isCreative(requested)?requested:profile.creatives[0];const creative=resolveCreative(id,profile.id);
+  return <main id="main-content" className="playable-preview"><header><Link className="text-link" to="/demo"><ArrowLeft size={16} />Judge demo</Link><span className="eyebrow">STANDALONE HTML5 PLAYABLE PROTOTYPE</span><h1>The real game. Your first move.</h1><p>An isolated instance of the existing game. This demonstrates HTML5 interaction; it does not establish eligibility for a Meta placement or playable support inside Instagram Reels.</p><div className="playable-controls"><AudienceControl label="Preview audience" value={profile.id} onChange={value=>setParams({profile:value,creative:id})} /><label className="campaign-select"><span>Preview game</span><select aria-label="Preview game" value={id} onChange={event=>{if(isCreative(event.target.value))setParams({profile:profile.id,creative:event.target.value});}}>{creativeIds.map(value=><option value={value} key={value}>{primaryCreatives[value].title}</option>)}</select></label><Link className="text-link" to={creative.gameRoute} target="_blank" rel="noopener noreferrer">Open full screen <ExternalLink size={15} /></Link></div></header><div className="playable-device"><iframe key={creative.gameRoute} src={creative.gameRoute} title={`${creative.title} — working playable preview`} allow="web-share; clipboard-write" /></div><p className="playable-footer">The preview keeps its own game state. You can complete, replay and reach the same optional Steer handoff.</p></main>;
+}

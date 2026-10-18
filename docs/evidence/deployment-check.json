@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-18",
+  "staticFilesScanned": 174,
+  "secretPatternFindingFiles": [],
+  "environmentFileCount": 0,
+  "rewriteApplicationPaths": true,
+  "rewriteExcludesAssets": true,
+  "published": false,
+  "limits": "Limited pattern scan, not a guarantee that no secret exists. Vercel rewrite regex checked locally; no hosted deployment was exercised."
+}

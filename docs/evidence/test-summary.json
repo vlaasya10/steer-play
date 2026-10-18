@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-18",
+  "unit": {
+    "total": 122,
+    "passed": 122,
+    "failed": 0,
+    "skipped": 0,
+    "files": 11
+  },
+  "fullBrowser": {
+    "startTime": "2026-10-18T13:22:08.451Z",
+    "duration": 515694.893,
+    "expected": 64,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalAffectedBrowser": {
+    "startTime": "2026-10-18T13:38:01.575Z",
+    "duration": 297541.25,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "intermediateCopyRun": {
+    "completedPassesObserved": 21,
+    "totalScheduled": 27,
+    "remainingNotCompleted": 6,
+    "note": "Intentionally interrupted to correct the guided navigation gap. Console output confirmed 21 completed passes; no final JSON report was produced. Replaced by the final affected-file checks."
+  },
+  "uniqueSuiteCases": 186,
+  "build": "TypeScript and Vite production build passed",
+  "limits": "The full 64-case run preceded the final copy/navigation refinements. All affected campaign and refinement cases were rerun afterwards (17 passed); legacy entertainment copy checks had also passed before the interrupted run stopped."
+}

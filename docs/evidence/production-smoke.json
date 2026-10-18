@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-18",
+  "entries": [
+    {
+      "id": "quiz",
+      "status": 200,
+      "destination": "/play/quiz",
+      "heading": "What does a tadka usually involve?"
+    },
+    {
+      "id": "missing-clue",
+      "status": 200,
+      "destination": "/play/missing-clue",
+      "heading": "Take a good look."
+    },
+    {
+      "id": "predict",
+      "status": 200,
+      "destination": "/play/predict",
+      "heading": "Two people. One afternoon. What happens next?"
+    },
+    {
+      "id": "signal-rush",
+      "status": 200,
+      "destination": "/play/signal-rush",
+      "heading": "Can you match the signal before it changes?"
+    },
+    {
+      "id": "case-file",
+      "status": 200,
+      "destination": "/play/case-file",
+      "heading": "Three clues. One mystery. Can you solve it?"
+    },
+    {
+      "id": "metabolism",
+      "status": 200,
+      "destination": "/learn/metabolism",
+      "heading": "What actually happens inside your body after a meal?"
+    },
+    {
+      "id": "glp1",
+      "status": 200,
+      "destination": "/learn/glp1",
+      "heading": "GLP-1.\nWithout the confusion."
+    }
+  ],
+  "localAssetFailures": [],
+  "pageErrors": [],
+  "missingClueShareFreshRecipientReplayRepeats": 5,
+  "method": "Finished production build on local Vite preview, Edge touch context 430x844. Seven campaign deep links; five repeated Missing Clue completion/share/fresh-recipient/replay cycles. External optional fonts excluded from local-asset failure count. Not a hosted deployment.",
+  "scope": "Production runtime diagnostics were taken before the last meal/timer wording and guided-return refinements. Final rebuilt asset/deep-link HTTP checks are recorded separately in final-build-http.json; updated runtime flows passed the affected browser suite."
+}

@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-18",
+  "build": "Final source after copy and guided-return fixes",
+  "assets": [
+    {
+      "file": "AdSimulator-DM8zbvZF.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "arrow-left-D_XAENBB.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "book-open-Btnna32B.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "brain-kSYZoyiP.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "campaign-BHwmeTew.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "campaign-DdRfbJPQ.css",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "file": "CampaignCreative-CvZUYHLa.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "CampaignEntry-DwxhtxoD.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "campaigns-BWzrlb7r.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "CaseFile-BpGfLOwe.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "createLucideIcon-DZjZZ3Dn.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "DemoMode-BuNR3t6W.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "entertainment-C6xKSVJ6.css",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "file": "entertainmentAds-CzDW25Jv.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "events-C3tPYheT.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "eye-70g-h3ny.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "GameCompletionScreen-CWYCsK7M.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "GameIllustrations-CZYyDmoe.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "glp1-BTvkRg-c.css",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "file": "GLP1Explained-Bi5zlQV6.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "glp1Questions-CDJOSPpl.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "HealthAd-DFyOMpC8.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "heart-BkGjAnDM.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "index-BIkRCsWl.css",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "file": "index-DLQlAbdp.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "InsideMetabolism-Cr1Y7bmh.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "interestConfigs-DPeN8xcW.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "InterestSelector-Cd666gMS.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "jsx-runtime-CNg7hZ3e.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "metabolism-B5pc4ON5.css",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "file": "MissingClue-aA-8yPxq.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "PlayablePreview-DdlY8R8H.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "plus-CYjGxjqA.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "PredictTheTwist-CZb-YXsX.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "quizEngine-DT9DToAM.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "ReelsSimulator-66UQmIzp.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "scenarios-CHbsFYN3.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "ScienceReveal-DHKMdT-k.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "scientificContent-BNnTVLM1.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "ShareChallenge-DE_KWOX7.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "signalPatterns-DOaUysnn.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "SignalRush-7Y7eelPV.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "sprout-BhU5sePo.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "SteerPlayQuiz-DUdlsPn_.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "TopicSources-uxfyaqJR.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "useGameEvents-BHRK_wzW.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "utensils-B2nIanLy.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "file": "volume-x-BYh36oCh.js",
+      "status": 200,
+      "type": "text/javascript"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/demo?guided=1",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/demo/reels?profile=food&reel=2",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/c/quiz?profile=food&seed=reel-demo",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/play/missing-clue",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/play/predict?scenario=family",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/play/signal-rush?seed=reel-demo",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/play/case-file?case=office",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/learn/metabolism",
+      "status": 200,
+      "html": true
+    },
+    {
+      "path": "/learn/glp1?topic=works",
+      "status": 200,
+      "html": true
+    }
+  ],
+  "developmentServerStatus": 200,
+  "limits": "HTTP bundle/deep-link check on local preview, not deployed Vercel infrastructure. Runtime flows are covered by the browser suites."
+}

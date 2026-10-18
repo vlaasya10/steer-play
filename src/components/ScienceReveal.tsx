@@ -1,0 +1,14 @@
+import { ArrowRight, Brain, Utensils, Radio } from 'lucide-react';
+import { scientificContent as content, scienceSources } from '../data/scientificContent';
+import type { ScienceArticle } from '../data/gameScienceContent';
+import ScienceFootnote from './ScienceFootnote';
+import type { ReactNode } from 'react';
+
+export default function ScienceReveal({ onContinue, article, diagram = 'gut-brain', visual, notesLabel }: { onContinue: () => void; article?: ScienceArticle; diagram?: 'gut-brain' | 'context'; visual?: ReactNode; notesLabel?: string }) {
+  if (article) return <section className="science-reveal entertainment-science" aria-labelledby="science-title" data-content-id={article.id}>
+    <span className="eyebrow">THE DISCOVERY BEHIND THE GAME</span><h1 id="science-title">{article.title}</h1>
+    {visual ?? (diagram === 'gut-brain' ? <div className="gut-brain-diagram" role="img" aria-label="Simplified illustration: the gut and brain communicate through nerves and hormones"><span><Utensils size={32} /><small>Your gut</small></span><span className="signal-line"><i /><Radio size={22} /><i /><small>Nerves + hormones</small></span><span><Brain size={36} /><small>Your brain</small></span></div> : <div className="context-diagram" role="img" aria-label="Biology, daily routines and individual context are connected"><span>Biology</span><i /><span>Daily life</span><i /><span>Context</span></div>)}
+    <p className="lead">{article.statement}</p><p>{article.detail}</p><aside className="analogy-note">{article.limitation}</aside><ScienceFootnote article={article} label={notesLabel} /><button className="button primary" onClick={onContinue}>Take this discovery with you <ArrowRight size={18} /></button>
+  </section>;
+  return <section className="science-reveal" aria-labelledby="science-title"><span className="eyebrow">THE DISCOVERY BEHIND THE GAME</span><h1 id="science-title">{content.title}</h1><div className="gut-brain-diagram" role="img" aria-label="The gut and brain communicate through nerves and hormones"><span><Utensils size={32} /><small>Your gut</small></span><span className="signal-line"><i /><Radio size={22} /><i /><small>Nerves + hormones</small></span><span><Brain size={36} /><small>Your brain</small></span></div><p className="lead">{content.takeaway}</p><p>{content.detail}</p><aside className="analogy-note">{content.analogy}</aside><div className="source-note"><span>{content.reviewStatus}</span><a href={content.source.url} target="_blank" rel="noopener noreferrer">Read the science: {content.source.title} ↗</a><details className="science-footnote"><summary>Additional sources &amp; context</summary>{(['appetite','sleep'] as const).map(id => <a key={id} href={scienceSources[id].url} target="_blank" rel="noopener noreferrer">{scienceSources[id].title} ↗</a>)}</details></div><button className="button primary" onClick={onContinue}>Take this discovery with you <ArrowRight size={18} /></button></section>;
+}

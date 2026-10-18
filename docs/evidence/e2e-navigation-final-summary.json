@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "stats": {
+    "startTime": "2026-10-18T13:38:01.575Z",
+    "duration": 297541.25,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "note": "Final affected-file rerun after meal/timer wording and guided-return fixes. Covers guide -> scroll -> different audience/creative -> game -> correct guide step -> correct friend URL. No retries."
+}

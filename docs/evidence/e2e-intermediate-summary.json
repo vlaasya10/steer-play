@@ -1,0 +1,11 @@
+{
+  "stats": {
+    "startTime": "2026-10-18T13:00:37.432Z",
+    "duration": 559972.755,
+    "expected": 63,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "note": "Intermediate full run: one 430px replay timeout; source documentation/build activity occurred during this dev-server run. A final frozen run is recorded separately. This does not establish the cause of the timeout."
+}
