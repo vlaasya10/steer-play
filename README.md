@@ -56,13 +56,15 @@ The discovery hub offers two ways into the experience: **five short entertainmen
 
 ### Discovery Hub — Games
 
-![Steer Play discovery hub featuring five playable games](docs/screenshots/discovery-games.png)
+<img width="1801" height="924" alt="image" src="https://github.com/user-attachments/assets/a4e73d45-e3b9-4412-ba9d-a68375667413" />
+
 
 The first section introduces five distinct play styles: observation, trivia, prediction, quick thinking and mystery. Game cards show a short description and approximate play time, allowing visitors to start from a topic they find interesting.
 
 ### Discovery Hub — Explore the Science
 
-![Steer Play discovery hub featuring Inside Your Metabolism and GLP-1 Explained](docs/screenshots/discovery-learning.png)
+<img width="1408" height="348" alt="image" src="https://github.com/user-attachments/assets/8dd201db-a5bb-4035-a842-6ace76b9ed93" />
+
 
 The second section offers a direct route into interactive learning, without requiring a visitor to complete an entertainment game first.
 
@@ -70,7 +72,8 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 1. Find What Everyone Missed — Visual Observation
 
-![Find What Everyone Missed game showing an illustrated Indian breakfast table with idlis and chai](docs/screenshots/missing-clue.png)
+<img width="1348" height="928" alt="image" src="https://github.com/user-attachments/assets/426c00c7-5589-4e5c-840e-8f19df070e15" />
+
 
 **[Play Find What Everyone Missed](https://steer-play.vercel.app/play/missing-clue)**
 
@@ -82,7 +85,8 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 2. Steer Play Quiz — Interest-Adaptive Trivia
 
-![Steer Play Quiz interest-selection page with five categories](docs/screenshots/adaptive-quiz.png)
+<img width="1282" height="838" alt="image" src="https://github.com/user-attachments/assets/6a6679f2-beff-4bdf-ac27-6bf89e1955fa" />
+
 
 **[Play Steer Play Quiz](https://steer-play.vercel.app/play/quiz?interest=food)**
 
@@ -94,7 +98,8 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 3. Predict the Twist — Everyday Story Prediction
 
-![Predict the Twist game showing an illustrated office lunch scenario with Meera and Kabir](docs/screenshots/predict-the-twist.png)
+<img width="1279" height="913" alt="image" src="https://github.com/user-attachments/assets/4e7e41a0-50b6-4f98-8922-cfbc80391782" />
+
 
 **[Play Predict the Twist](https://steer-play.vercel.app/play/predict)**
 
@@ -106,7 +111,8 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 4. Signal Rush — Quick Pattern Recognition
 
-![Signal Rush first round asking players to match a square with the correct symbol](docs/screenshots/signal-rush.png)
+<img width="1309" height="826" alt="image" src="https://github.com/user-attachments/assets/e8a8614f-006a-4717-a1fc-eb12bc0ed7ee" />
+
 
 **[Play Signal Rush](https://steer-play.vercel.app/play/signal-rush)**
 
@@ -118,7 +124,7 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 5. The Case File — Investigative Mystery
 
-![The Case File game showing three expandable clues: sleep schedule, meal routine and work schedule](docs/screenshots/case-file.png)
+<img width="1288" height="922" alt="image" src="https://github.com/user-attachments/assets/bf5ef385-7f9d-4b9d-a601-245da2696cdd" />
 
 **[Play The Case File](https://steer-play.vercel.app/play/case-file)**
 
@@ -130,7 +136,8 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 6. Inside Your Metabolism — Interactive Body Science
 
-![Inside Your Metabolism interactive lesson asking what happens after a meal](docs/screenshots/inside-your-metabolism.png)
+<img width="1288" height="918" alt="image" src="https://github.com/user-attachments/assets/e73e8a73-e493-4b2d-8f17-241e7833e229" />
+
 
 **[Explore Inside Your Metabolism](https://steer-play.vercel.app/learn/metabolism)**
 
@@ -142,7 +149,8 @@ The second section offers a direct route into interactive learning, without requ
 
 ### 7. GLP-1, Explained — Guided Myth-or-Fact Learning
 
-![GLP-1 Explained topic-selection page showing six questions about GLP-1 science and treatment considerations](docs/screenshots/glp1-explained.png)
+<img width="1297" height="909" alt="image" src="https://github.com/user-attachments/assets/65d4c136-dea2-4ca8-bfc4-489ac1e65fbf" />
+
 
 **[Explore GLP-1, Explained](https://steer-play.vercel.app/learn/glp1)**
 
@@ -165,7 +173,8 @@ Steer Play contains a simulated vertical short-video feed. Visitors can scroll t
 
 The demo supports broad interest profiles and configurable creative variations. Different profiles change the hook, presentation, and game destination.
 
-![Simulated Reels feed showing fictional creator content and audience/creative selectors](docs/screenshots/reels-simulator.png)
+<img width="901" height="933" alt="image" src="https://github.com/user-attachments/assets/371abe45-a017-492e-a70a-f801852a47f5" />
+
 
 The screenshot shows the fictional feed, audience selector and featured-creative selector. It helps demonstrate how a campaign-facing creative can direct someone to a playable experience without implying access to real social media accounts.
 
@@ -326,10 +335,6 @@ Steer Play is an **educational prototype**. Its material should not be treated a
 - Users can play without logging in or providing contact details.
 
 The product demonstrates an advertising concept; it is not an officially connected Meta advertising service.
-
-## Development and Credits
-
-Steer Play was developed as a solo project. Product concept, game selection, creative approach, and development direction were defined by the creator. ChatGPT was used for ideation and technical planning, and OpenAI Codex assisted with implementation, debugging, testing, and refinement. The application uses open-source frontend tooling and Steer's supplied visual guidelines.
 
 ## Links
 
